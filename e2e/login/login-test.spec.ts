@@ -26,8 +26,11 @@ describe('validate login', function(){
     });
 
     it('valid username placeholder', function(){
-        expect(element(by.id('inputUsername')).getAttribute('placeholder')).toBe('Username');
-        expect(element(by.id('inputPassword')).getAttribute('placeholder')).toBe('Password');
+        // expect(element(by.id('inputUsername')).getAttribute('placeholder')).toBe('Username');
+        // expect(element(by.id('inputPassword')).getAttribute('placeholder')).toBe('Password');
+        expect(page.getPlaceHolder(page.username)).toBe('Username');
+        expect(page.getPlaceHolder(page.password)).toBe('Password');
+
     })
 })
 

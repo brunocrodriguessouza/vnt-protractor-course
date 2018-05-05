@@ -6,4 +6,8 @@ export class Page {
     clickOnLogin = function () {
         this.loginBtn.click();
     }
+
+    getPlaceHolder = function(field) {
+        return field.getAttribute('placeholder');
+    }
 }
