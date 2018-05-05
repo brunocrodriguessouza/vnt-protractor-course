@@ -3,7 +3,6 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup, AbstractControl, Validators } from '@angular/forms';
 import { ValidateMaskedInput } from './validators/masked-input-validator';
 import { Subscription } from 'rxjs/Subscription';
-import { truncate } from 'fs';
 
 @Component({
   selector: 'app-register',
